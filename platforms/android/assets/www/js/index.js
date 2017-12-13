@@ -29,7 +29,29 @@ var app = {
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
 
-        window.location="http://cursosbraga.com.br"; 
+        var networkState = navigator.connection.type;
+        
+        var states = {};
+        states[Connection.UNKNOWN]  = 'Unknown connection';
+        states[Connection.ETHERNET] = 'Ethernet connection';
+        states[Connection.WIFI]     = 'WiFi connection';
+        states[Connection.CELL_2G]  = 'Cell 2G connection';
+        states[Connection.CELL_3G]  = 'Cell 3G connection';
+        states[Connection.CELL_4G]  = 'Cell 4G connection';
+        states[Connection.CELL]     = 'Cell generic connection';
+        states[Connection.NONE]     = 'No network connection';
+
+        window.location="http://cursosbraga.com.br";
+
+        var _iabRef = window.open("http://cursosbraga.com.br", '_self', 'location=no');
+        _iabRef.addEventListener('loadstop', function(event) {    
+           console.log("parou de ler");    
+        //    if (event.url.match("mobile/close")) {
+        //        _iabRef.close();
+        //    }
+       });
+    
+        console.log('Connection type: ' + states[networkState]);
     },
 
     // Update DOM on a Received Event

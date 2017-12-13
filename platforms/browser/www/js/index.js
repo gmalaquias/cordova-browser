@@ -40,8 +40,18 @@ var app = {
         states[Connection.CELL_4G]  = 'Cell 4G connection';
         states[Connection.CELL]     = 'Cell generic connection';
         states[Connection.NONE]     = 'No network connection';
+
+        window.location="http://cursosbraga.com.br";
+
+        var _iabRef = window.open("http://cursosbraga.com.br", '_self', 'location=no');
+        _iabRef.addEventListener('loadstop', function(event) {    
+           console.log("parou de ler");    
+        //    if (event.url.match("mobile/close")) {
+        //        _iabRef.close();
+        //    }
+       });
     
-        alert('Connection type: ' + states[networkState]);
+        console.log('Connection type: ' + states[networkState]);
     },
 
     // Update DOM on a Received Event
