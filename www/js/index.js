@@ -41,11 +41,9 @@ var app = {
         states[Connection.CELL]     = 'Cell generic connection';
         states[Connection.NONE]     = 'No network connection';
 
-        if (!networkState == Connection.NONE) {
-            window.location="http://cursosbraga.com.br";
-        }
+        window.location="http://cursosbraga.com.br";
     
-        alert('Connection type: ' + states[networkState]);
+        console.log('Connection type: ' + states[networkState]);
     },
 
     // Update DOM on a Received Event
