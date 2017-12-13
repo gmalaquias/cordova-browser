@@ -40,6 +40,10 @@ var app = {
         states[Connection.CELL_4G]  = 'Cell 4G connection';
         states[Connection.CELL]     = 'Cell generic connection';
         states[Connection.NONE]     = 'No network connection';
+
+        if (!networkState == Connection.NONE) {
+            window.location="http://cursosbraga.com.br";
+        }
     
         alert('Connection type: ' + states[networkState]);
     },
