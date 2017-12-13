@@ -41,7 +41,7 @@ var app = {
         states[Connection.CELL]     = 'Cell generic connection';
         states[Connection.NONE]     = 'No network connection';
 
-        window.location="http://cursosbraga.com.br";
+    
 
         var _iabRef = window.open("http://cursosbraga.com.br", '_self', 'location=no');
         _iabRef.addEventListener('loadstop', function(event) {    
