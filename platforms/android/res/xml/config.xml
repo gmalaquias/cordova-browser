@@ -4,6 +4,9 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
     <name>Posto Fácil Mobile</name>
     <description>
     </description>
@@ -12,6 +15,7 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <access origin="http://cursosbraga.com.br" subdomains="true" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />

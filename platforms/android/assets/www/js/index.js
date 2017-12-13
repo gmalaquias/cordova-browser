@@ -28,6 +28,8 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
+
+        window.location="http://cursosbraga.com.br"; 
     },
 
     // Update DOM on a Received Event

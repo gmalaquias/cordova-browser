@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "br.com.intercamp.postofacilmobile"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "br.com.intercamp.postofacilmobile"
     }
   },
   "dependent_plugins": {}
