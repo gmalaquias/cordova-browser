@@ -8,7 +8,7 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <access launch-external="no" origin="http://cursosbraga.com.br" subdomains="true" />
+    <access external="no" launch-external="no" origin="http://centralcac.com.br" subdomains="true" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
