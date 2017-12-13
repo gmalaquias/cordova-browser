@@ -46,7 +46,7 @@ var app = {
             var el = document.getElementById('msg');
             el.innerHTML = 'Dispositivo sem conexão com a internet.'
         }else{
-            var _iabRef = window.open("http://cursosbraga.com.br", '_self', 'location=no');
+            var _iabRef = window.open("http://192.168.130.155:8086", '_self', 'location=no');
             _iabRef.addEventListener('loadstop', function(event) {    
             });
         }
