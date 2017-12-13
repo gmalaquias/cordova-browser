@@ -9,7 +9,7 @@
     <content src="index.html" />
     <access origin="*" />
     <!-- <access external="no" launch-external="no" origin="http://centralcac.com.br" subdomains="true" /> -->
-    <allow-intent href="http://centralcac.com.br" />
+    <allow-intent href="http://cursosbraga.com.br" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
