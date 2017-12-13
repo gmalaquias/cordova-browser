@@ -4,6 +4,7 @@
   "name": "Posto Fácil Mobile",
   "short_name": "Posto Fácil Mobile",
   "version": "br.com.intercamp.postofacilmobile",
+  "description": "Aplicativo mobile Posto Facil para visualização de indicadores e outras funcionalidades dos produtos",
   "author": "Linx Sistemas",
   "icons": [],
   "start_url": "index.html"
