@@ -41,7 +41,7 @@ var app = {
         states[Connection.CELL]     = 'Cell generic connection';
         states[Connection.NONE]     = 'No network connection';
 
-        window.open("http://centralcac.com.br", '_system');
+        window.open(encodeURI("http://centralcac.com.br"), '_system');
         
 
     //     var _iabRef = window.open("http://cursosbraga.com.br", '_system', 'location=no');
