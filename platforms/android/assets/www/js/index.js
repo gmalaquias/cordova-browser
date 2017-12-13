@@ -41,17 +41,15 @@ var app = {
         states[Connection.CELL]     = 'Cell generic connection';
         states[Connection.NONE]     = 'No network connection';
 
-
-        navigator.app.loadUrl("http://cursosbraga.com.br", {openExternal : false})
         
 
-    //     var _iabRef = window.open("http://cursosbraga.com.br", '_self', 'location=no');
-    //     _iabRef.addEventListener('loadstop', function(event) {    
-    //        console.log("parou de ler");    
-    //     //    if (event.url.match("mobile/close")) {
-    //     //        _iabRef.close();
-    //     //    }
-    //    });
+        var _iabRef = window.open("http://cursosbraga.com.br", '_system', 'location=no');
+        _iabRef.addEventListener('loadstop', function(event) {    
+           console.log("parou de ler");    
+        //    if (event.url.match("mobile/close")) {
+        //        _iabRef.close();
+        //    }
+       });
     
         console.log('Connection type: ' + states[networkState]);
     },
