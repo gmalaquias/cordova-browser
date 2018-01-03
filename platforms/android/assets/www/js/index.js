@@ -42,27 +42,19 @@ var app = {
         states[Connection.NONE]     = 'No network connection';
         
 
-        var _iabRef = window.open("http://cursosbraga.com.br", '_self', 'location=no');
-        _iabRef.addEventListener('loadstop', function(event) {    
-           console.log("parou de ler");    
-        //    if (event.url.match("mobile/close")) {
-        //        _iabRef.close();
-        //    }
-       });
-    
-        console.log('Connection type: ' + states[networkState]);
+        if(Connection.NONE == networkState){
+            var el = document.getElementById('msg');
+            el.innerHTML = 'Dispositivo sem conexão com a internet.'
+        }else{
+            var _iabRef = window.open("https://postofacilmobile.azurewebsites.net", '_self', 'location=no');
+            _iabRef.addEventListener('loadstop', function(event) {    
+            });
+        }
     },
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
+        
     }
 };
 
