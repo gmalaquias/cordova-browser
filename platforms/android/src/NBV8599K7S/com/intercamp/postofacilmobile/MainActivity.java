@@ -17,7 +17,7 @@
        under the License.
  */
 
-package NBV8599K7S.br.com.linx.postofacilmobile;
+package NBV8599K7S.com.intercamp.postofacilmobile;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
