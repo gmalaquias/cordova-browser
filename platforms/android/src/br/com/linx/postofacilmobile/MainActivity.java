@@ -17,7 +17,7 @@
        under the License.
  */
 
-package br.com.intercamp.postofacilmobile;
+package br.com.linx.postofacilmobile;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
