@@ -41,14 +41,19 @@ var app = {
         states[Connection.CELL]     = 'Cell generic connection';
         states[Connection.NONE]     = 'No network connection';
         
-
+        
         if(Connection.NONE == networkState){
-            var el = document.getElementById('msg');
+            var el = document.getElementById('msg'); 
             el.innerHTML = 'Dispositivo sem conexão com a internet.'
+            setInterval(function(){
+                location.reload();
+            },2000);
         }else{
-            var _iabRef = window.open("https://postofacilmobile.azurewebsites.net", '_self', 'location=no');
-            _iabRef.addEventListener('loadstop', function(event) {    
-            });
+            setTimeout(function(){
+                var _iabRef = window.open("https://prd-apw-postofacilmobile.azurewebsites.net", '_self', 'location=no');
+                    _iabRef.addEventListener('loadstop', function(event) {    
+                });
+            },1500);
         }
     },
 

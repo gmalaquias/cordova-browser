@@ -1,19 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="br.com.intercamp.postofacilmobile" version="3.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="NBV8599K7S.br.com.linx.postofacilmobile" version="2.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Posto Fácil Mobile</name>
     <description>
-        Aplicativo mobile Posto Facil para visualização de indicadores e outras funcionalidades dos produtos 
+        Aplicativo mobile Posto Facil para visualização de indicadores e outras funcionalidades dos produtos. 
     </description>
     <author email="anderson.gusicuma@linx.com.br" href="http://www.linx.com.br/">
-        Linx Sistemas
+        Linx Sistemas 
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <allow-intent href="http://cursosbraga.com.br" />
+    <allow-intent href="https://prd-apw-postofacilmobile.azurewebsites.net" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <preference name="orientation" value="portrait" />
 </widget>
