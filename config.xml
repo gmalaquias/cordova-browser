@@ -7,6 +7,7 @@
     <author email="anderson.gusicuma@linx.com.br" href="http://www.linx.com.br/">
         Linx Sistemas 
     </author>
+    <preference name="phonegap-version" value="cli-8.0.0" />
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="https://prd-apw-postofacilmobile.azurewebsites.net" />
@@ -70,9 +71,9 @@
     <preference name="orientation" value="portrait" />
     <preference name="webviewbounce" value="true" />
     <engine name="browser" spec="^5.0.1" />
-    <engine name="android" spec="^6.3.0" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
     <plugin name="cordova-plugin-network-information" spec="^1.3.4" />
     <plugin name="cordova-plugin-inappbrowser" spec="^1.7.2" />
     <engine name="ios" spec="~4.5.4" />
+    <engine name="android" spec="~7.0.0" />
 </widget>
