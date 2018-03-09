@@ -8,13 +8,14 @@
         Linx Sistemas 
     </author>
     <preference name="phonegap-version" value="cli-8.0.0" />
+    <preference name="deployment-target" value="7.1.2" />
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="https://prd-apw-postofacilmobile.azurewebsites.net" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
+    <allow-intent href="sms:*" /> 
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <platform name="android">
