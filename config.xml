@@ -10,6 +10,8 @@
     <preference name="phonegap-version" value="cli-8.0.0" />
     <content src="index.html" />
     <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
     <allow-intent href="https://prd-apw-postofacilmobile.azurewebsites.net" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

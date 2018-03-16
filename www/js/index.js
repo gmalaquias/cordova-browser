@@ -50,7 +50,10 @@ var app = {
             },2000);
         }else{
             setTimeout(function(){
-                document.getElementById("myForm").submit();
+                //console.log(cordova);
+                var _iabRef = window.open("https://prd-apw-postofacilmobile.azurewebsites.net", '_self', 'location=no');
+                _iabRef.addEventListener('loadstop', function(event) {    
+                });
             },1500);
         }
     },
