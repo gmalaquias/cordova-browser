@@ -50,8 +50,10 @@ var app = {
             },2000);
         }else{
             setTimeout(function(){
-                var _iabRef = window.open("https://prd-apw-postofacilmobile.azurewebsites.net", '_blank', 'location=no');
-                _iabRef.addEventListener('loadstop', function(event) {    
+                $.post("https://prd-apw-postofacilmobile.azurewebsites.net", function (response) {
+                    var _iabRef = window.open("https://prd-apw-postofacilmobile.azurewebsites.net", '_blank', 'location=no');
+                    _iabRef.addEventListener('loadstop', function(event) {    
+                    });
                 });
             },1500);
         }
