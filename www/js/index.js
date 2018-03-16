@@ -50,7 +50,7 @@ var app = {
             },2000);
         }else{
             setTimeout(function(){
-               $('.meuform').submit();
+                document.getElementById("myForm").submit();
             },1500);
         }
     },
